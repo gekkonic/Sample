@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contentPanel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.Rwang.to.Exin.MainActivity">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextSeed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/LeftRight"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="@dimen/LeftRight"
+        android:hint="@string/hint_seed"
+        android:inputType="number"
+        android:singleLine="true"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guidelineTop" />
+
+    <TextView
+        android:id="@+id/textFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/FontSpace"
+        android:text="@string/text_from"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintStart_toStartOf="@+id/editTextSeed"
+        app:layout_constraintEnd_toStartOf="@id/editTextFrom"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSeed" />
+
+    <EditText
+        android:id="@+id/editTextFrom"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/UpDown"
+        android:hint="@string/hint_from"
+        android:inputType="number"
+        android:singleLine="true"
+        app:layout_constraintEnd_toEndOf="@+id/guidelineVer"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSeed" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineVer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/textTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/FontSpace"
+        android:text="@string/text_to"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintEnd_toStartOf="@id/editTextTo"
+        app:layout_constraintStart_toEndOf="@id/editTextFrom"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSeed" />
+
+    <EditText
+        android:id="@+id/editTextTo"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/UpDown"
+        android:hint="@string/hint_to"
+        android:inputType="number"
+        android:singleLine="true"
+        app:layout_constraintEnd_toEndOf="@+id/editTextSeed"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSeed" />
+
+    <TextView
+        android:id="@+id/textSample"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/FontSpace"
+        android:layout_marginLeft="7dp"
+        android:text="@string/text_sample"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintStart_toStartOf="@+id/textFrom"
+        app:layout_constraintEnd_toStartOf="@id/editTextFrom"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFrom" />
+
+    <EditText
+        android:id="@+id/editTextLength"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/UpDown"
+        android:inputType="number"
+        android:singleLine="true"
+        app:layout_constraintEnd_toEndOf="@+id/guidelineVer"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFrom" />
+
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="140dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/button_shape_login"
+        android:text="@string/text_clear"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTo"
+        app:layout_constraintEnd_toEndOf="@id/editTextTo"
+        app:layout_constraintStart_toStartOf="@id/guidelineVer" />
+
+    <Button
+        android:id="@+id/buttonCalcu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/LeftRight"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="@dimen/LeftRight"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_shape_login"
+        android:text="@string/text_cal"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/editTextLength"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonRecalcu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/LeftRight"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="@dimen/LeftRight"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_shape_login"
+        android:text="@string/text_recal"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/buttonCalcu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/FontSpace"
+        android:layout_marginLeft="40dp"
+        android:text="@string/text_result"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintStart_toStartOf="@+id/buttonRecalcu"
+        app:layout_constraintEnd_toStartOf="@id/editTextFrom"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRecalcu" />
+
+    <EditText
+        android:id="@+id/editTextResult"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="@dimen/UpDown"
+        android:layout_marginLeft="@dimen/LeftRight"
+        android:layout_marginRight="@dimen/LeftRight"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:scrollbars="vertical"
+        android:gravity="top"
+        android:minLines="6"
+        android:hint="@string/hint_result"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textResult" />
+
+</android.support.constraint.ConstraintLayout>

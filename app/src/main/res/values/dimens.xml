@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="LeftRight">30dp</dimen>
+    <dimen name="UpDown">10dp</dimen>
+    <dimen name="FontSpace">17dp</dimen>
+    <dimen name="text_size">18sp</dimen>
+</resources>

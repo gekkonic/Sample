@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">随机数抽样工具</string>
+    <string name="hint_seed">请输入一个种子（不输入则将随机）</string>
+    <string name="text_from">从</string>
+    <string name="hint_from">1</string>
+    <string name="text_to">到</string>
+    <string name="hint_to">100</string>
+    <string name="text_sample">抽取</string>
+    <string name="hint_length">60</string>
+    <string name="text_clear">清空</string>
+    <string name="text_cal">抽样并复制到剪贴板</string>
+    <string name="text_recal">再次抽样并复制到剪贴板</string>
+    <string name="text_result">抽样结果</string>
+    <string name="hint_result">抽样结果</string>
+
+</resources>
